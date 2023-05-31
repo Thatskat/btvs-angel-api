@@ -34,7 +34,6 @@ app.use("/api/actors", actor);
 app.use("/api/directors", director);
 app.use("/api/writers", writer);
 
-console.log(process.env.MONGO_PASSWORD)
 
 // ESTABLISH API PORT
 const port = process.env.PORT || serverPort;
