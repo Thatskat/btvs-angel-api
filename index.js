@@ -25,7 +25,16 @@ const director = require("./routes/directors");
 const writer = require("./routes/writers");
 
 // CONNECT TO MONGODB DATABASE
-mongoose.connect(`mongodb+srv://katrinafgill:hNHwyVvQNiwT6zU4@buffyversecluster.dgzgulx.mongodb.net/?retryWrites=true&w=majority`).then(() => console.log("Connection to the database has been successful")).catch((err) => console.log("An error has occurred when trying to connect to the database: ", err));
+mongoose.connect("mongodb+srv://katrinafgill:hNHwyVvQNiwT6zU4@buffyversecluster.dgzgulx.mongodb.net/?retryWrites=true&w=majority",   {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(() => console.log("Connection to the database has been successful")).catch((err) => console.log("An error has occurred when trying to connect to the database: ", err));
+
+const db = mongoose.connection;
+db.on("error", console.error.bind(console, "connection error: "));
+db.once("open", function () {
+  console.log("Connected successfully");
+});
 
 // ROUTES
 app.use("/api/buffy", buffy);
