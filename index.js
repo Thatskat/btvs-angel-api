@@ -25,7 +25,7 @@ const director = require("./routes/directors");
 const writer = require("./routes/writers");
 
 // CONNECT TO MONGODB DATABASE
-mongoose.connect("mongodb://localhost:37017/BuffyVerse").then(() => console.log("Connection to the database has been successful")).catch((err) => console.log("An error has occurred when trying to connect to the database: ", err));
+mongoose.connect(`mongodb+srv://katrinafgill:hNHwyVvQNiwT6zU4@buffyversecluster.dgzgulx.mongodb.net/?retryWrites=true&w=majority`).then(() => console.log("Connection to the database has been successful")).catch((err) => console.log("An error has occurred when trying to connect to the database: ", err));
 
 // ROUTES
 app.use("/api/buffy", buffy);
@@ -34,7 +34,7 @@ app.use("/api/actors", actor);
 app.use("/api/directors", director);
 app.use("/api/writers", writer);
 
-console.log(process.env.ADMIN_API_KEY)
+console.log(process.env.MONGO_PASSWORD)
 
 // ESTABLISH API PORT
 const port = process.env.PORT || serverPort;
