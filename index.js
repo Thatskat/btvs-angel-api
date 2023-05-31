@@ -7,6 +7,15 @@ const mongoose = require("mongoose");
 const bodyParser = require('body-parser');
 // IMPORT HELMET MODULE
 const helmet = require('helmet');
+// IMPORT RATE LIMIT MODULE
+const rateLimit = require("express-rate-limit");
+// RATE LIMITS
+const limiter = rateLimit({
+  windowMs: 3 * 60 * 1000,
+  max: 100,
+  standardHeaders: true,
+  legacyHeaders: false,
+});
 // STORE CONFIG IN ENV VAR
 process.env["NODE_CONFIG_DIR"] = __dirname + "/config/";
 const config = require('config');
@@ -17,6 +26,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(helmet());
+app.use(limiter);
 // ROUTES
 const buffy = require("./routes/buffy");
 const angel = require("./routes/angel");
