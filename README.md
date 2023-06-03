@@ -12,7 +12,6 @@ Well, after 32 hours of staring at IMDb, a couple of existential crisis and tryi
 - [Buffy the Vampire Slayer](#buffy-the-vampire-slayer-endpoint)
 - [Angel](#angel-endpoint)
 - [Actors, Directors and Writers](#actors-directors-and-writers-endpoint)
-- 
 ## Buffy the Vampire Slayer Endpoint
 
 ### `GET /api/buffy`
