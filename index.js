@@ -45,7 +45,7 @@ app.use(bodyParser.json());
 app.use(limiter);
 
 // ROUTES
-app.use('/')
+app.get('/')
 const buffy = require("./routes/buffy");
 const angel = require("./routes/angel");
 const actor = require("./routes/actors");
