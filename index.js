@@ -46,7 +46,7 @@ app.use(limiter);
 
 // ROUTES
 app.get("/", function (req, res) {
-  res.sendFile('/index.html');
+  res.sendFile(path.resolve('index.html'));
 });
 const buffy = require("./routes/buffy");
 const angel = require("./routes/angel");
