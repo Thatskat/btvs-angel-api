@@ -9,15 +9,15 @@ const logger = winston.createLogger({
     new winston.transports.File({
       filename: "/logs/error.log",
       level: "error",
-    }).timestamp(),
+    }),
     new winston.transports.File({
       filename: "/logs/warnings.log",
       level: "warn",
-    }).timestamp(),
-    new winston.transports.File({ filename: "/logs/combined.log" }).timestamp(),
+    }),
+    new winston.transports.File({ filename: "/logs/combined.log" }),
     new winston.transports.MongoDB({
       db: `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_CLUSTER}.dgzgulx.mongodb.net/?retryWrites=true&w=majority`,
-    }).timestamp(),
+    }),
   ],
 });
 
