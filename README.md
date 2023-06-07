@@ -5,7 +5,7 @@ Ever wanted to get all episodes, cast and crew data from *Buffy the Vampire Slay
 Well, after 32 hours of staring at IMDb, a couple of existential crisis and trying to remember why I decided to develop this in the first place, the API is finally here!
 
 ## Production Host
-:globe_with_meridians: [https://btvs-angel-api-production-3a72.up.railway.app/](https://btvs-angel-api-production-3a72.up.railway.app/)
+:globe_with_meridians: [https://buffy-angel-api.up.railway.app/](https://buffy-angel-api.up.railway.app/)
 
 ## API
 
@@ -18,7 +18,7 @@ Well, after 32 hours of staring at IMDb, a couple of existential crisis and tryi
 
 Get all 144 episodes of Buffy the Vampire Slayer in the following JSON format:
 
-> [https://btvs-angel-api-production-3a72.up.railway.app/api/buffy](https://btvs-angel-api-production-3a72.up.railway.app/api/buffy)
+> [https://buffy-angel-api.up.railway.app/api/buffy](https://buffy-angel-api.up.railway.app/api/buffy)
 
 <details>
   <summary>Show full returned data :dizzy:</summary>
@@ -160,7 +160,7 @@ Get all 144 episodes of Buffy the Vampire Slayer in the following JSON format:
 ### `GET /api/buffy/season/{seasonNumber}`
 
 Returns an arrary with all Buffy the Vampire episodes in season `{seasonNumber}` e.g. `GET /api/buffy/season/2`:
-> [https://btvs-angel-api-production-3a72.up.railway.app/api/buffy/season/2](https://btvs-angel-api-production-3a72.up.railway.app/api/buffy/season/2)
+> [https://buffy-angel-api.up.railway.app/api/buffy/season/2](https://buffy-angel-api.up.railway.app/api/buffy/season/2)
 
 <details>
     <summary>Show full returned data :yellow_heart:</summary>
@@ -299,7 +299,7 @@ Returns an arrary with all Buffy the Vampire episodes in season `{seasonNumber}`
  ### `GET /api/buffy/season/{seasonNumber}/{episodeNumber}`
 
 Returns an object of Buffy the Vampire season `{seasonNumber}` and episode `{episodeNumber}` e.g. `GET /api/buffy/season/3/9`:
-> [https://btvs-angel-api-production-3a72.up.railway.app/api/buffy/season/3/9](https://btvs-angel-api-production-3a72.up.railway.app/api/buffy/season/3/9)
+> [https://buffy-angel-api.up.railway.app/api/buffy/season/3/9](https://buffy-angel-api.up.railway.app/api/buffy/season/3/9)
 
 
 <details>
@@ -440,7 +440,7 @@ Returns an object of Buffy the Vampire season `{seasonNumber}` and episode `{epi
  ### `GET /api/buffy/id={episodeId}`
 
 Returns an object of Buffy the Vampire episode with id of `{episodeId}` e.g. `GET /api/buffy/id=4671d055f80e00da9e9dc0c`:
-> [https://btvs-angel-api-production-3a72.up.railway.app/api/buffy/id=4671d055f80e00da9e9dc0c](https://btvs-angel-api-production-3a72.up.railway.app/api/buffy/id=4671d055f80e00da9e9dc0c)
+> [https://buffy-angel-api.up.railway.app/api/buffy/id=4671d055f80e00da9e9dc0c](https://buffy-angel-api.up.railway.app/api/buffy/id=4671d055f80e00da9e9dc0c)
 
 <details>
    <summary>Show full returned data :yellow_heart:</summary>
@@ -570,7 +570,7 @@ Returns an object of Buffy the Vampire episode with id of `{episodeId}` e.g. `GE
 
 Get all 110 episodes of Angel in the following JSON format:
 
-> [https://btvs-angel-api-production-3a72.up.railway.app/api/angel](https://btvs-angel-api-production-3a72.up.railway.app/api/angel)
+> [https://buffy-angel-api.up.railway.app/api/angel](https://buffy-angel-api.up.railway.app/api/angel)
 
 <details>
   <summary>Show full returned data :dizzy:</summary>
@@ -652,7 +652,7 @@ Get all 110 episodes of Angel in the following JSON format:
 ### `GET /api/angel/season/{seasonNumber}`
 
 Returns an arrary with all Angel episodes in season `{seasonNumber}` e.g. `GET /api/angel/season/5`:
-> [https://btvs-angel-api-production-3a72.up.railway.app/api/angel/season/5](https://btvs-angel-api-production-3a72.up.railway.app/api/angel/season/5)
+> [https://buffy-angel-api.up.railway.app/api/angel/season/5](https://buffy-angel-api.up.railway.app/api/angel/season/5)
 
 <details>
     <summary>Show full returned data :yellow_heart:</summary>
@@ -778,7 +778,7 @@ Returns an arrary with all Angel episodes in season `{seasonNumber}` e.g. `GET /
  ### `GET /api/angel/season/{seasonNumber}/{episodeNumber}`
 
 Returns an object of Angel season `{seasonNumber}` and episode `{episodeNumber}` e.g. `GET /api/angel/season/1/8`:
-> [https://btvs-angel-api-production-3a72.up.railway.app/api/angel/season/1/8](https://btvs-angel-api-production-3a72.up.railway.app/api/angel/season/1/8)
+> [https://buffy-angel-api.up.railway.app/api/angel/season/1/8](https://buffy-angel-api.up.railway.app/api/angel/season/1/8)
 
 
 <details>
@@ -884,7 +884,7 @@ Returns an object of Angel season `{seasonNumber}` and episode `{episodeNumber}`
  ### `GET /api/angel/id={episodeId}`
 
 Returns an object of Angel episode with id of `{episodeId}` e.g. `GET /api/angel/id=46ae1972017e64a25df6786`:
-> [https://btvs-angel-api-production-3a72.up.railway.app/api/angel/id=46ae1972017e64a25df6786](https://btvs-angel-api-production-3a72.up.railway.app/api/angel/id=46ae1972017e64a25df6786)
+> [https://buffy-angel-api.up.railway.app/api/angel/id=46ae1972017e64a25df6786](https://buffy-angel-api.up.railway.app/api/angel/id=46ae1972017e64a25df6786)
 
 <details>
    <summary>Show full returned data :yellow_heart:</summary>
@@ -1017,7 +1017,7 @@ Returns an object of Angel episode with id of `{episodeId}` e.g. `GET /api/angel
 
 Retrieves all actors that have appeared in 2 or more episodes of Buffy the Vampire Slayer and/or Angel.
 
-> [https://btvs-angel-api-production-3a72.up.railway.app/api/actors](https://btvs-angel-api-production-3a72.up.railway.app/api/actors)
+> [https://buffy-angel-api.up.railway.app/api/actors](https://buffy-angel-api.up.railway.app/api/actors)
 
 
 <details>
@@ -1049,7 +1049,7 @@ Retrieves all actors that have appeared in 2 or more episodes of Buffy the Vampi
 
 Retrieves all directors that have direacted at least one episode of Buffy the Vampire Slayer or Angel.
 
-> [https://btvs-angel-api-production-3a72.up.railway.app/api/directors](https://btvs-angel-api-production-3a72.up.railway.app/api/directors)
+> [https://buffy-angel-api.up.railway.app/api/directors](https://buffy-angel-api.up.railway.app/api/directors)
 
 <details>
    <summary>Show full returned data :yellow_heart:</summary>
@@ -1080,7 +1080,7 @@ Retrieves all directors that have direacted at least one episode of Buffy the Va
 
 Retrieves all writers that have written at least one episode of Buffy the Vampire Slayer or Angel.
 
-> [https://btvs-angel-api-production-3a72.up.railway.app/api/writers](https://btvs-angel-api-production-3a72.up.railway.app/api/writers)
+> [https://buffy-angel-api.up.railway.app/api/writers](https://buffy-angel-api.up.railway.app/api/writers)
 
 <details>
    <summary>Show full returned data :dizzy:</summary>
