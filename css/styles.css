@@ -1,9 +1,109 @@
 /* IMPORT LATO GOOGLE FONT */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+/* COLOR VARIABLES */
+:root {
+  --primary: #1e1a19;
+  --secondary: #fafaf9;
+  --darkerPrimary: #1c1917;
+}
 /* CSS RESETS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: var(--secondary);
+  background: var(--primary);
+  padding: 10rem;
+}
+/* CLASSES */
+.subText {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--secondary);
+    padding: 2rem 0rem 0rem;
+}
+/* TYPOGRAPHY */
+h1 {
+  font-size: 3.052rem;
+  padding: 2rem;
+}
+h2 {
+  font-size: 2.441rem;
+}
+h3 {
+  font-size: 1.953rem;
+}
+h4 {
+  font-size: 1.563rem;
+}
+p {
+  padding: 1rem;
+}
+/* NAVBAR */
+header {
+  background: var(--darkerPrimary);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  z-index: 2;
+  border-bottom: #1c1917bf solid 1px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+header nav ul li {
+    margin: 0 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 600;
+}
+/* INTRODUCTION */
+#introduction {
+    padding: 3rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#introduction .info {
+    width: 45vw;
+}
+
+#introduction .info h1 {
+    color: var(--secondary);
+}
+#introduction .info p {
+    margin: 0.5rem 0rem;
+}
+
+#introduction .video {
+    width: 40vw;
+    margin-top: -3rem;
+}
+
+#introduction .video video {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+a {
+  color: var(--secondary);
+  transition: 0.5s all ease-in-out;
+  text-decoration: none;
+}
+a:hover {
+  color: #fafaf9d7;
 }
