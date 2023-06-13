@@ -45,12 +45,14 @@ app.use(bodyParser.json());
 app.use(limiter);
 
 // ROUTES
-
 const buffy = require("./routes/buffy");
 const angel = require("./routes/angel");
 const actor = require("./routes/actors");
 const director = require("./routes/directors");
 const writer = require("./routes/writers");
+
+// USE PUBLIC FOLDER
+app.use(express.static(__dirname + '/public'));
 
 // USE ERROR MIDDLEWARE
 app.use(error);
