@@ -83,7 +83,6 @@ app.use(express.static(__dirname + "/public"));
 // ROUTES
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/index.html");
-  res.sendFile(__dirname + "/css/styles.css");
 });
 app.use("/api/buffy", buffy);
 app.use("/api/angel", angel);
