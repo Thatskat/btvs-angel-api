@@ -1106,6 +1106,7 @@ Retrieves all writers that have written at least one episode of Buffy the Vampir
  ``` 
   
   </details>
+
 ## Author
 
-API been developed by [Kat](https://github.com/Thatskat/) 🐱
+API been developed by [Kat](https://github.com/Thatskat/)
