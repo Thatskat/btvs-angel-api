@@ -77,6 +77,9 @@ db.once("open", function () {
   console.log("Connected successfully");
 });
 
+// USE PUBLIC FOLDER
+app.use(express.static(__dirname + "/public"));
+
 // ROUTES
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/index.html");
