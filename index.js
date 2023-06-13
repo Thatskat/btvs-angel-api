@@ -51,7 +51,6 @@ const actor = require("./routes/actors");
 const director = require("./routes/directors");
 const writer = require("./routes/writers");
 
-
 // USE ERROR MIDDLEWARE
 app.use(error);
 
@@ -81,7 +80,7 @@ db.once("open", function () {
 // ROUTES
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/index.html");
-  res.sendFile(__dirname + "/css/styles.css")
+  res.sendFile(__dirname + "/css/styles.css");
 });
 app.use("/api/buffy", buffy);
 app.use("/api/angel", angel);
