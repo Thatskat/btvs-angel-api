@@ -45,9 +45,7 @@ app.use(bodyParser.json());
 app.use(limiter);
 
 // ROUTES
-app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/index.html");
-});
+
 const buffy = require("./routes/buffy");
 const angel = require("./routes/angel");
 const actor = require("./routes/actors");
@@ -81,6 +79,10 @@ db.once("open", function () {
 });
 
 // ROUTES
+app.get("/", function (req, res) {
+  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "/css/styles.css")
+});
 app.use("/api/buffy", buffy);
 app.use("/api/angel", angel);
 app.use("/api/actors", actor);
