@@ -34,7 +34,7 @@ const config = require("config");
 const serverPort = config.get("port");
 
 // MIDDLEWARE
-const error = require("./middleware/error");
+// const error = require("./middleware/error");
 
 // USE MIDDLEWARE
 app.use(helmet());
@@ -52,7 +52,7 @@ const director = require("./routes/directors");
 const writer = require("./routes/writers");
 
 // USE ERROR MIDDLEWARE
-app.use(error);
+// app.use(error);
 
 // CONNECT TO MONGODB DATABASE
 mongoose
